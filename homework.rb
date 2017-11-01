@@ -25,7 +25,8 @@ lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'P
 # puts lines.remove("Edinburgh Park")
 
 # 8. Delete 'Edinburgh Park' from the array by index
-puts lines.delete_at(1)
+# puts lines.delete_at(1)
+
 # 9. Reverse the positions of the stops in the array
 # puts lines.reverse
 ### B. Given the following data structure:
@@ -33,15 +34,15 @@ puts lines.delete_at(1)
 my_hash = {"0" => "Zero", 1 => "One", :two => "Two", "two" => 2}
 
 # 1. How would you return the string `"One"`?
-
+# puts my_hash.fetch(1)
 # 2. How would you return the string `"Two"`?
-
+# puts my_hash[:two]
 # 3. How would you return the number `2`?
-
+# puts my_hash("two")
 # 4. How would you add `{3 => "Three"}` to the hash?
-
+# puts my_hash[]
 # 5. How would you add `{:four => 4}` to the hash?
-
+puts my_hash[:four]
 ### C. Given the following data structure:
 
 users = {
