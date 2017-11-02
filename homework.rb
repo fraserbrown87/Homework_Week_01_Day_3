@@ -40,9 +40,9 @@ my_hash = {"0" => "Zero", 1 => "One", :two => "Two", "two" => 2}
 # 3. How would you return the number `2`?
 # puts my_hash("two")
 # 4. How would you add `{3 => "Three"}` to the hash?
-
+# my_hash[3] = "Three"
 # 5. How would you add `{:four => 4}` to the hash?
-
+# my_hash[:four] = 4
 ### C. Given the following data structure:
 
 users = {
@@ -78,20 +78,20 @@ users = {
 }
 
 # 1. Return Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
-for twitter in users
-  if twitter[:twitter] == "jonnyt"
-    p "johnnyt"
-  end
-end
+
+# puts users["Jonathan"][:twitter]
 
 # 2. Return Erik's hometown
 
+# puts users["Erik"][:home_town]
+
 # 3. Return the array of Erik's favourite numbers
+# puts users["Erik"][:favourite_numbers]
 
 # 4. Return the type of Avril's pet Colin
-
+# puts users["Avril"][:pets]["Colin"]
 # 5. Return the smallest of Erik's favourite numbers
-
+# puts users["Erik"][:favourite_numbers].min
 # 6. Add the number `7` to Erik's favourite numbers
 
 # 7. Change Erik's hometown to Edinburgh
